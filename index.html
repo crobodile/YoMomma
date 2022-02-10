@@ -21,19 +21,15 @@ Choose Adjective:<br>
 <button onclick= "updateText()">Generate New Joke</button>
 <script>
 function updateText(){
-	document.getElementById("jokeText5").innerHTML = document.getElementById("jokeText4").innerHTML;
-	document.getElementById("jokeText4").innerHTML = document.getElementById("jokeText3").innerHTML;
-	document.getElementById("jokeText3").innerHTML = document.getElementById("jokeText2").innerHTML;
-	document.getElementById("jokeText2").innerHTML = document.getElementById("jokeText").innerHTML;
+if(document.getElementById("jokeText").innerHTML != ""){
+	document.getElementById("jokeHistory").innerHTML = document.getElementById("jokeHistory").innerHTML + "<br>" +document.getElementById("jokeText").innerHTML;
+    }
 	document.getElementById("jokeText").innerHTML = "Yo momma so " + adj + "...           XBOX LIVE!!!";
 }
 </script>
 <br>
 <h2><span id="jokeText"></span></h2>
-<p><span id="jokeText2"></span></p>
-<p><span id="jokeText3"></span></p>
-<p><span id="jokeText4"></span></p>
-<p><span id="jokeText5"></span></p>
+<p><span id="jokeHistory"></span></p>
 </body>
 
 </html>
