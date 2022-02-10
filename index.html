@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+
+</header>
+
+<body>
+<h1>Yo momma joke generator</h1>
+Choose Adjective:<br>
+<script> var adj = "empty"; 
+</script>
+<button onclick= "adj='fat'">Fat</button><br>
+<button onclick= "adj='stupid'">Stupid</button><br>
+<button onclick= "adj='skinny'">Skinny</button><br>
+<button onclick= "adj='short'">Short</button><br>
+<button onclick= "adj='ugly'">Ugly</button><br>
+<button onclick= "adj='dumb'">Dumb</button><br>
+<br>
+<button onclick= "updateText()">Generate Joke</button>
+<script>
+function updateText(){
+	document.getElementById("jokeText").innerHTML = "Yo momma so " + adj + "...           XBOX LIVE!!!";
+}
+</script>
+<br>
+<h2><span id="jokeText"></span></h2>
+</body>
+
+</html>
