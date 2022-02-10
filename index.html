@@ -24,7 +24,7 @@ function updateText(){
 if(document.getElementById("jokeText").innerHTML != ""){
 	document.getElementById("jokeHistory").innerHTML = document.getElementById("jokeText").innerHTML + "<br>" +document.getElementById("jokeHistory").innerHTML;
     }
-	if( Math.random(1,100) != 37){
+	if( Math.random(1) > 0.05){
 	document.getElementById("jokeText").innerHTML = "Yo momma so " + adj + "...           XBOX LIVE!!!";
 	} else {
 	document.getElementById("jokeText").innerHTML = "Yo momma so " + adj + " that when she look in da mirror, it brokey!";
