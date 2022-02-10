@@ -17,14 +17,22 @@ Choose Adjective:<br>
 <button onclick= "adj='ugly'">Ugly</button><br>
 <button onclick= "adj='dumb'">Dumb</button><br>
 <br>
-<button onclick= "updateText()">Generate Joke</button>
+<button onclick= "updateText()">Generate New Joke</button>
 <script>
 function updateText(){
+	document.getElementById("jokeText5").innerHTML = document.getElementById("jokeText4").innerHTML;
+	document.getElementById("jokeText4").innerHTML = document.getElementById("jokeText3").innerHTML;
+	document.getElementById("jokeText3").innerHTML = document.getElementById("jokeText2").innerHTML;
+	document.getElementById("jokeText2").innerHTML = document.getElementById("jokeText").innerHTML;
 	document.getElementById("jokeText").innerHTML = "Yo momma so " + adj + "...           XBOX LIVE!!!";
 }
 </script>
 <br>
 <h2><span id="jokeText"></span></h2>
+<p><span id="jokeText2"></span></p><br>
+<p><span id="jokeText3"></span></p><br>
+<p><span id="jokeText4"></span></p><br>
+<p><span id="jokeText5"></span></p><br>
 </body>
 
 </html>
